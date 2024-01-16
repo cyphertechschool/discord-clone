@@ -1,0 +1,41 @@
+@import url("../fonts/fontface.css");
+@import url("../css/typography.css");
+@import url("../css/mediaQuery.css");
+
+:root {
+  --font-headline: "Ginto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-primary: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --bg-color: rgb(246, 246, 246);
+  --body-color: #fff;
+  --footer-bg: rgb(35, 39, 42);
+  --hero-color: rgb(64, 78, 237);
+  --main-heading: #fff;
+  --main-text: rgb(50, 53, 56);
+  --primary-color: rgb(88, 101, 242);
+  --sub-heading: rgb(35, 39, 42);
+
+  --border-radius: 28px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--main-text);
+}
+
+/* -------- Flag Drop down ------------*/
+
+.btn-lang {
+  display: flex;
+}
