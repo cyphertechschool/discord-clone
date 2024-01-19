@@ -95,6 +95,7 @@ body {
 /* hero - header */
 .hero-bg {
   background-color: var(--hero-color);
+  position: relative;
 }
 .header {
   position: relative;
@@ -124,13 +125,47 @@ body {
   text-decoration: underline;
 }
 
+.hero-wraper {
+  position: relative;
+  max-width: 1600px;
+  height: 100%;
+  margin: auto;
+  background: url("../images/e6d57714479874c665b36c7adee76b1d.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-content {
   max-width: 750px;
   margin: auto;
   padding-top: 7rem;
   padding-bottom: 7rem;
-  z-index: 10;
 }
+
+.hero-left-image {
+  max-width: 600px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+}
+
+.hero-right-image {
+  max-width: 600px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+}
+
+.hero-left-image img,
+.hero-right-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .hero-content h1 {
   font-family: var(--font-headline);
   color: var(--body-color);
@@ -182,7 +217,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 3rem;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -249,9 +284,3 @@ body {
 }
 
 /* bg-images */
-
-.bg-images:nth-child(1) {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}

@@ -17,6 +17,17 @@
     height: 30px;
     cursor: pointer;
   }
+  .hero-left-image {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    left: -10%;
+    right: auto;
+  }
+  .hero-right-image {
+    display: none;
+  }
 }
 
 /* Query For 600px */
@@ -29,5 +40,8 @@
   h6,
   p {
     text-align: center;
+  }
+  .hero-content {
+    padding: 2rem 1rem;
   }
 }
