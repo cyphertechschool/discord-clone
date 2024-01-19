@@ -1,7 +1,33 @@
 /* Query For 900px */
 @media screen and (max-width: 56.25rem) {
+  .container {
+    padding: 0 1rem;
+  }
+  .hero-content {
+    padding: 5rem 1rem;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
 }
 
 /* Query For 600px */
 @media screen and (max-width: 37.5rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
 }

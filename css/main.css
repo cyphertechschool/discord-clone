@@ -1,6 +1,4 @@
 @import url("../fonts/fontface.css");
-@import url("../css/typography.css");
-@import url("../css/mediaQuery.css");
 
 :root {
   --font-headline: "Ginto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,10 +30,228 @@ html {
 body {
   background-color: var(--body-color);
   color: var(--main-text);
+  overflow-x: hidden;
 }
 
 /* -------- Flag Drop down ------------*/
 
-.btn-lang {
+.dropdown {
+  position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 180px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dropdown .icon-arrow-down {
+  font-size: 20px;
+}
+
+.dropdown-btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.dropdown-btn img,
+.lang-item img {
+  width: auto;
+  height: 15px;
+  margin: 0;
+}
+.dropdown-wraper {
+  display: none;
+}
+.lang-list {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  cursor: pointer;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.lang-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+}
+.lang-item:hover {
+  background-color: rgb(211, 211, 211);
+}
+.lang-text {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/* show list */
+
+.show-list {
+  display: block;
+}
+
+/* hero - header */
+.hero-bg {
+  background-color: var(--hero-color);
+}
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 1rem;
+  z-index: 100;
+}
+
+.logo {
+  height: 35px;
+}
+.navbar-list {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar-list a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--body-color);
+}
+.navbar-list a:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  z-index: 10;
+}
+.hero-content h1 {
+  font-family: var(--font-headline);
+  color: var(--body-color);
+}
+.hero-content p {
+  color: var(--body-color);
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.hero-content .btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu i {
+  font-size: 1.65rem;
+  color: var(--bg-color);
+}
+/* mobile-panel */
+
+.mobile-wraper {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mobile-wraper.mobile-wraper-active {
+  display: block;
+}
+.mobile-panel {
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: var(--body-color);
+  padding: 1.5rem;
+}
+
+.mobile-panel.active {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  animation: slidePanelOpen 0.5s;
+}
+
+@keyframes slidePanelOpen {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.mobile-header img {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  filter: invert();
+}
+.mobile-header i {
+  filter: invert(0);
+  font-size: 1.65rem;
+  cursor: pointer;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: left;
+  padding: 2rem 1rem;
+}
+.mobile-list a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--main-text);
+}
+.mobile-list a:hover {
+  text-decoration: underline;
+}
+.mobile-btn a {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+.mobile-btn a:hover {
+  color: var(--bg-color);
+}
+
+/* bg-images */
+
+.bg-images:nth-child(1) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

@@ -7,7 +7,7 @@
   --footer-bg: rgb(35, 39, 42);
   --hero-color: rgb(64, 78, 237);
   --main-heading: #fff;
-  --main-text: rgb(50, 53, 56);
+  --main-text: rgb(42, 44, 47);
   --primary-color: rgb(88, 101, 242);
   --sub-heading: rgb(35, 39, 42);
 
@@ -53,13 +53,16 @@ img {
   width: 100%;
   height: 100%;
 }
-
+a,
+button,
+input {
+  outline: none;
+}
 /* container */
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: auto;
-  padding: 7.5rem 1.5rem;
 }
 
 /* grids */
@@ -86,12 +89,16 @@ img {
   padding: 16px 32px;
   border-radius: var(--border-radius);
   font-size: 1.125rem;
-  font-family: var(--primary-color);
+  font-family: var(--font-primary);
   font-weight: 500;
   line-height: 24px;
   text-decoration: none;
   transition: all 0.15s ease-in-out;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.255);
+}
+.btn-sm {
+  padding: 7px 14px;
+  font-weight: 800;
+  font-size: 0.75rem;
 }
 
 .btn-primary {
@@ -100,7 +107,7 @@ img {
 }
 .btn-primary:hover {
   color: var(--primary-color);
-  box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.255);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.155);
 }
 .btn-secondary {
   background-color: var(--main-text);
@@ -144,7 +151,7 @@ img {
 /* Query For 768px */
 @media screen and (max-width: 48rem) {
   h1 {
-    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
   }
 
   h2 {
