@@ -8,16 +8,16 @@ const dropdownWraper = document.querySelector('.dropdown-wraper');
 
 
 
-// dropdown.addEventListener('click', () => {
-//     dropdownWraper.classList.toggle('show-list');
-// });
+dropdown.addEventListener('click', () => {
+    dropdownWraper.classList.toggle('show-list');
+});
 
-// langItem.forEach((list) => {
-//     list.addEventListener('click', () => {
-//         selectedImg.src = list.querySelector('img').src;
-//         selectedText.innerHTML = list.querySelector('.lang-text').innerHTML;
-//     });
-// });
+langItem.forEach((list) => {
+    list.addEventListener('click', () => {
+        selectedImg.src = list.querySelector('img').src;
+        selectedText.innerHTML = list.querySelector('.lang-text').innerHTML;
+    });
+});
 
 // mobile panel
 

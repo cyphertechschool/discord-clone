@@ -27,6 +27,10 @@
   }
   .hero-right-image {
     display: none;
+  } /* description */
+
+  .description {
+    width: 70ch;
   }
 }
 
@@ -43,5 +47,12 @@
   }
   .hero-content {
     padding: 2rem 1rem;
+  } /* description */
+
+  .description {
+    width: 100%;
+  }
+  .copyright-content {
+    justify-content: center;
   }
 }

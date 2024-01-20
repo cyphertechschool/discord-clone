@@ -41,7 +41,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  width: 180px;
+  width: 200px;
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 5px;
@@ -54,6 +54,7 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  color: #fff;
 }
 .dropdown-btn img,
 .lang-item img {
@@ -63,11 +64,12 @@ body {
 }
 .dropdown-wraper {
   display: none;
+  background-color: var(--body-color);
 }
 .lang-list {
   position: absolute;
-  top: 45px;
   left: 0;
+  bottom: 45px;
   cursor: pointer;
   max-height: 250px;
   overflow-y: scroll;
@@ -283,4 +285,80 @@ body {
   color: var(--bg-color);
 }
 
-/* bg-images */
+.downloading img {
+  max-width: 550px;
+  margin: auto;
+}
+/* description */
+
+.description {
+  width: 50ch;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--footer-bg);
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.footer-lang .footer-socail {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-lang .footer-socail i {
+  color: var(--body-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.footer-list h4 {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.footer-list ul li {
+  list-style-type: none;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+.footer-list ul li a {
+  color: var(--body-color);
+  text-decoration: none;
+}
+.footer-list ul li a:hover {
+  text-decoration: underline;
+}
+/* copyright */
+
+.copyright {
+  margin-top: 5rem;
+  border-top: 1px solid var(--primary-color);
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+.copyright-content img {
+  width: 100px;
+}
+
+.footer-copyright {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+  user-select: none;
+  font-size: 14px;
+  color: var(--bg-color);
+}
