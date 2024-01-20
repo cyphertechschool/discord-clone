@@ -198,33 +198,3 @@ input {
 .footer-bg {
   background-color: var(--footer-bg);
 }
-
-/* Query For 768px */
-@media screen and (max-width: 48rem) {
-  h1 {
-    font-size: clamp(1.75rem, 5vw, 2.75rem);
-  }
-
-  h2 {
-    font-size: clamp(1.25rem, 4vw, 2.5rem);
-  }
-
-  .container {
-    padding: 3.75rem 0.75rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .gird-footer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Query For 480px */
-@media screen and (max-width: 30rem) {
-  .gird-footer {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
